@@ -26,5 +26,4 @@ public class RepoResponse<T> {
     public void setResponse(T response) {
         this.response = response;
     }
-
 }

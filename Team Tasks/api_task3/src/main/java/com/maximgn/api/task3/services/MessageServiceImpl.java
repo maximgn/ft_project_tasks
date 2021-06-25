@@ -3,7 +3,6 @@ import com.maximgn.api.task3.domain.RepoResponse;
 import com.maximgn.api.task3.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 
 @Service
