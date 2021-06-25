@@ -1,4 +1,5 @@
 package com.maximgn.api.task3.repos;
+
 import com.maximgn.api.task3.domain.Messages;
 import com.maximgn.api.task3.domain.RepoResponse;
 import org.hibernate.Session;
@@ -39,7 +40,7 @@ public class MessageRepoImpl implements MessageRepo {
         int id = querySelect.getSingleResult().getId();
         Query<?> queryDelete = session.createQuery("delete from Messages where id = :myid").setParameter("myid", id);
         queryDelete.executeUpdate();
-        return new RepoResponse<>(HttpStatus.OK, null);
+        return new RepoResponse<>(HttpStatus.OK, lm.get(0));
     }
 
     @Override

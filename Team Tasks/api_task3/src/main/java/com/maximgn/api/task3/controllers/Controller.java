@@ -1,11 +1,13 @@
 package com.maximgn.api.task3.controllers;
-import com.maximgn.api.task3.domain.Messages;
+
 import com.maximgn.api.task3.domain.RepoResponse;
 import com.maximgn.api.task3.services.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
